@@ -1,23 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import TodoApp from './components/Todo';
+import LoginControl from "./components/LogInLogOutHandler";
+import ListView from './components/ListView';
+import FormExm from './components/Form';
+import MultInput from './components/handlingMultipleInput';
+import Datatable from './components/DataTable';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      {/* <div className='card'>
+        <TodoApp/>
+        <LoginControl/>
+        <ListView/>
+        <FormExm/>
+        <MultInput/>
+      </div> */}
+        <Datatable/>
+      
     </div>
   );
 }
